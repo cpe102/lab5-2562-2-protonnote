@@ -1,8 +1,20 @@
-#include<iostream>
+#include <iostream>
+#include <string>
 using namespace std;
 
-
-
+string mixText(string x,string y){
+	string a;
+	if (x.size() == y.size()){
+		for (int i=0 ; i<x.size() ; i++){
+			a += x[i];
+			a += y[i];
+		}
+	return a;	
+	}
+	else{
+		return "E";
+	}
+}
 
 int main(){	
 	cout << mixText("AAA","BBB") << "\n";
